@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat&family=Raleway&display=swap');
 
-a{
-  color: white;
-  text-decoration: none;
-}
 
+/* общие */
 * {
 	margin: 0;
 	padding: 0;
+}
+
+a{
+  color: white;
+  text-decoration: none;
 }
 
 ul, li {
@@ -15,35 +17,15 @@ ul, li {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  color: #959BB6;
 }
 
-iframe{
-  display: block;
+.span--bold {
+  font-weight: 600;
 }
 
-main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: linear-gradient(109.76deg, #2a283b 36.98%, #757b85 99.95%);
-}
-
-.logo{
-  display: flex;
-  align-items: center;
-}
-.logoimg{
-  padding: 15px;
-}
-
-header{
-  background-color: #959BB6;
-  display: flex;
-  justify-content:flex-start;
-  align-items: center;
-}
 
 h1{
   font-family: 'Raleway', sans-serif;
@@ -51,39 +33,96 @@ h1{
   font-size: 32px;
 }
 
-.navi{
+
+
+/* header */
+header{
+  background-color: #959BB6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo__texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo__string {
+  font-family: 'Alex Brush', cursive;
+}
+
+nav a{
   color: #F9F8F7;
   font-size: 32px;
   font-family: 'Raleway', sans-serif;
-  display: inline-flex;
-  margin-left: 25px;
+  margin: 0 10px;
 }
 
-nav{
-  margin-left: 1000px;
+
+/* main */
+main{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: linear-gradient(109.76deg, #2a283b 36.98%, #757b85 99.95%);
 }
 
-p{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
-  color: #959BB6;
+
+
+.article-first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-span{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-  color: #F9F8F7;
+.article-first > p {
+  text-shadow: 2px 2px 3px #F9F8F7;
+  width: 60%;
+  text-align: center;
 }
 
-b {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+.article-first__img {
+  width: 724px;
+  border-radius: 100px; 
+  border: 5px solid #74737D; 
 }
 
-.path{
-  width: 984px;
-  height: 689px;
+.article-path {
+  margin-bottom: 50px;
+}
+
+.path {
+  margin: auto;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+
   background-color: #F9F8F7;
+}
+
+.path p{
+  font-size: 24px;
+}
+
+/* не работает */
+.path>p:last-of-type {
+  margin-bottom: 30px;
+}
+
+
+.transition {
+  text-align: center;
 }
 
 .transition img{
@@ -92,17 +131,36 @@ b {
   margin-right: 38px;
 }
 
+
+
+
+
 .elements{
   width: 862px;
+  margin: auto;
 }
 
 .elements p {
   color: #F9F8F7;
   font-size: 24px;
-  display: inline-flex;
 }
 
+.elements>p:last-of-type {
+  margin-bottom: 30px;
+}
+
+
+.elements img {
+  margin-bottom: 30px;
+  width: 789px;
+  height: 423px;
+  border-radius: 90px; 
+  border: 1px solid #FFFFFF;
+}
+
+
 .stats{
+  margin: auto;
   width: 869px;
 }
 
@@ -113,11 +171,19 @@ b {
 
 footer{
   background-color: #959BB6;
-  height: 92px;
+  padding: 20px 70px;
 }
+
 footer p{
   color:#F9F8F7;
-  font-size: 40px;
+  font-size: 20px;
   font-family: 'Raleway', sans-serif;
   padding: 20px;
 }
+
+
+
+
+
+
+
